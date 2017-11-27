@@ -4,6 +4,29 @@ exports[`<App /> renders correctly 1`] = `
 <div
   className="App"
 >
-  <Flashcard />
+  <Flashcard
+    card={0}
+    flipped={false}
+  />
+  <div
+    className="flex-buttons"
+  >
+    <button
+      className="btn blue"
+      onClick={[Function]}
+    >
+      <span>
+        Flip
+      </span>
+    </button>
+    <button
+      className="btn"
+      onClick={[Function]}
+    >
+      <span>
+        Next
+      </span>
+    </button>
+  </div>
 </div>
 `;
