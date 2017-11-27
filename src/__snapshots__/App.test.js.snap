@@ -6,6 +6,7 @@ exports[`<App /> renders correctly 1`] = `
 >
   <Flashcard
     card={0}
+    flipCard={[Function]}
     flipped={false}
   />
   <div

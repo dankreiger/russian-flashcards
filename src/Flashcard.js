@@ -18,11 +18,11 @@ class Flashcard extends Component {
   }
 
   render() {
-    const { card, flipped } = this.props;
+    const { card, flipped, flipCard } = this.props;
     const { newCard } = this.state;
 
     return (
-      <div className={classNames('Flashcard', {newCard, flipped})}>
+      <div className={classNames('Flashcard', {newCard, flipped})} onClick={flipCard}>
         <Front card={vocabulary[card]} flipped={flipped} />
         <Back card={vocabulary[card]} flipped={flipped} />
       </div>

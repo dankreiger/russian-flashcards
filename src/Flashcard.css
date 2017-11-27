@@ -1,5 +1,6 @@
 .Flashcard {
   background: #fff;
+  cursor: pointer;
   width: 100%;
   border-radius: 2px;
   max-width: 600px;

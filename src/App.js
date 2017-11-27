@@ -22,7 +22,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Flashcard card={card} flipped={flipped} />
+        <Flashcard card={card} flipCard={this.flipCard} flipped={flipped} />
         <div className="flex-buttons">
           <button className="btn blue" onClick={this.flipCard}>
             <span>Flip</span>
