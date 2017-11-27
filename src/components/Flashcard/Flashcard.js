@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import vocabulary from './vocabulary';
+
+import vocabulary from '../../static/vocabulary';
 import classNames from 'classnames';
 
-import Front from './Front';
-import Back from './Back';
+import Front from '../Front/Front';
+import Back from '../Back/Back';
 import './Flashcard.css'
 
 class Flashcard extends Component {

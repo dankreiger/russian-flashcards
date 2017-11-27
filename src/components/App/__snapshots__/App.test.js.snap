@@ -66,26 +66,40 @@ exports[`<App /> renders correctly 1`] = `
         </Back>
       </div>
     </Flashcard>
-    <div
-      className="flex-buttons"
+    <Buttons
+      flipCard={[Function]}
+      nextCard={[Function]}
+      sayWord={[Function]}
     >
-      <button
-        className="btn blue flipCard"
-        onClick={[Function]}
+      <div
+        className="flex-buttons"
       >
-        <span>
-          Flip
-        </span>
-      </button>
-      <button
-        className="btn nextCard"
-        onClick={[Function]}
-      >
-        <span>
-          Next
-        </span>
-      </button>
-    </div>
+        <button
+          className="btn blue sayWord"
+          onClick={[Function]}
+        >
+          <span>
+            Say
+          </span>
+        </button>
+        <button
+          className="btn orange flipCard"
+          onClick={[Function]}
+        >
+          <span>
+            Flip
+          </span>
+        </button>
+        <button
+          className="btn nextCard"
+          onClick={[Function]}
+        >
+          <span>
+            Next
+          </span>
+        </button>
+      </div>
+    </Buttons>
   </div>
 </App>
 `;

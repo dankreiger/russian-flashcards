@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Flashcard from './Flashcard';
-import vocabulary from './vocabulary';
+import Flashcard from '../Flashcard/Flashcard';
+import Buttons from '../Buttons/Buttons';
+import vocabulary from '../../static/vocabulary';
+import Artyom from 'artyom.js';
 import './App.css';
 
 class App extends Component {
@@ -17,20 +19,20 @@ class App extends Component {
     this.setState({flipped: false, card: this.state.card === vocabulary.length - 1 ? 0 : this.state.card + 1});
   }
 
+  sayWord = () => {
+    let artyom = new Artyom();
+    artyom.say(vocabulary[this.state.card].word, {
+      lang:"ru-RU"
+    });
+  }
+
   render() {
     const { card, flipped } = this.state;
 
     return (
       <div className="App">
         <Flashcard card={card} flipCard={this.flipCard} flipped={flipped} />
-        <div className="flex-buttons">
-          <button className="btn blue flipCard" onClick={this.flipCard}>
-            <span>Flip</span>
-          </button>
-          <button className="btn nextCard" onClick={this.nextCard}>
-            <span>Next</span>
-          </button>
-        </div>
+        <Buttons sayWord={this.sayWord} flipCard={this.flipCard} nextCard={this.nextCard}/>
       </div>
     );
   }
