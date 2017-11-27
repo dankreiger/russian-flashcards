@@ -24,10 +24,10 @@ class App extends Component {
       <div className="App">
         <Flashcard card={card} flipCard={this.flipCard} flipped={flipped} />
         <div className="flex-buttons">
-          <button className="btn blue" onClick={this.flipCard}>
+          <button className="btn blue flipCard" onClick={this.flipCard}>
             <span>Flip</span>
           </button>
-          <button className="btn" onClick={this.nextCard}>
+          <button className="btn nextCard" onClick={this.nextCard}>
             <span>Next</span>
           </button>
         </div>

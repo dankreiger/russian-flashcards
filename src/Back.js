@@ -5,7 +5,7 @@ const Back = ({card, flipped}) => {
   return (
     <div className={classNames('back', {hidden: !flipped})}>
       <p className='lead'>{card.translation}</p>
-      <p>{card.phonetic}</p>
+      <p className='phonetic'>{card.phonetic}</p>
     </div>
   )
 }
