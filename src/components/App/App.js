@@ -8,7 +8,7 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = { flipped: false, card: 0, currentLang: "Russian" };
+    this.state = { flipped: false, card: 0, frontSide: "Russian"};
   }
 
   flipCard = () => {
@@ -31,9 +31,12 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="flex-buttons-column">
-          <Button classes="btn blue sayWord" command={this.sayWord} text="Say"/>
-          <Button classes="btn" text={currentLang} />
+        <div class="absolute-top-right">
+          <label>Front Side</label>
+          <select>
+            <option>Russian</option>
+            <option>English</option>
+          </select>
         </div>
         <Flashcard card={card} flipCard={this.flipCard} flipped={flipped} />
         <div className="flex-buttons">

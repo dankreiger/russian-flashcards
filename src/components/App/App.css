@@ -97,3 +97,9 @@
   -o-transition: width .2s ease-out, padding-top .2s ease-out;
   transition: width .2s ease-out, padding-top .2s ease-out;
 }
+
+.absolute-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
