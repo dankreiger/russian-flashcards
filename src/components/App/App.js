@@ -8,7 +8,7 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = { flipped: false, card: 0 };
+    this.state = { flipped: true, card: 0, currentLang: "English" };
   }
 
   flipCard = () => {
@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   nextCard = () => {
-    this.setState({flipped: false, card: this.state.card === vocabulary.length - 1 ? 0 : this.state.card + 1});
+    this.setState({flipped: this.state.currentLang === "English", card: this.state.card === vocabulary.length - 1 ? 0 : this.state.card + 1});
   }
 
   sayWord = () => {
@@ -31,6 +31,13 @@ class App extends Component {
 
     return (
       <div className="App">
+        <div className="starting-language-menu">
+          <label>Front Side </label>
+          <select onChange={e => this.setState({currentLang: e.target.value, flipped: e.target.value === "English"})}>
+            <option>English</option>
+            <option>Russian</option>
+          </select>
+        </div>
         <Flashcard card={card} flipCard={this.flipCard} flipped={flipped} />
         <Buttons sayWord={this.sayWord} flipCard={this.flipCard} nextCard={this.nextCard}/>
       </div>
