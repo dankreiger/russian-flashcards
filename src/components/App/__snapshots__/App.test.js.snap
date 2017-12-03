@@ -14,7 +14,7 @@ exports[`<App /> renders correctly 1`] = `
         className="Flashcard"
         onClick={[Function]}
       >
-        <Front
+        <Russian
           card={
             Object {
               "phonetic": "[dá]",
@@ -25,7 +25,7 @@ exports[`<App /> renders correctly 1`] = `
           flipped={false}
         >
           <div
-            className="front"
+            className="russian"
           >
             <p
               className="lead"
@@ -38,8 +38,8 @@ exports[`<App /> renders correctly 1`] = `
               [dá]
             </p>
           </div>
-        </Front>
-        <Back
+        </Russian>
+        <English
           card={
             Object {
               "phonetic": "[dá]",
@@ -50,7 +50,7 @@ exports[`<App /> renders correctly 1`] = `
           flipped={false}
         >
           <div
-            className="back hidden"
+            className="english hidden"
           >
             <p
               className="lead"
@@ -63,7 +63,7 @@ exports[`<App /> renders correctly 1`] = `
               [dá]
             </p>
           </div>
-        </Back>
+        </English>
       </div>
     </Flashcard>
     <Buttons

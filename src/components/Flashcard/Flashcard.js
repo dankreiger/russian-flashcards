@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import vocabulary from '../../static/vocabulary';
 import classNames from 'classnames';
 
-import Front from '../Front/Front';
-import Back from '../Back/Back';
+import Russian from '../Russian/Russian';
+import English from '../English/English';
 import './Flashcard.css'
 
 class Flashcard extends Component {
@@ -24,8 +24,8 @@ class Flashcard extends Component {
 
     return (
       <div className={classNames('Flashcard', {newCard, flipped})} onClick={flipCard}>
-        <Front card={vocabulary[card]} flipped={flipped} />
-        <Back card={vocabulary[card]} flipped={flipped} />
+        <Russian card={vocabulary[card]} flipped={flipped} />
+        <English card={vocabulary[card]} flipped={flipped} />
       </div>
     )
   }

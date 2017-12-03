@@ -1,14 +1,14 @@
 import React from 'react';
 import classNames from 'classnames';
 
-const Front = ({card, flipped}) => {
+const Russian = ({card, flipped}) => {
 
   return (
-    <div className={classNames('front', {hidden: flipped})}>
+    <div className={classNames('russian', {hidden: flipped})}>
       <p className='lead'>{card.word}</p>
       <p className='phonetic'>{card.phonetic}</p>
     </div>
   )
 }
 
-export default Front;
+export default Russian;

@@ -23,11 +23,11 @@ describe('<App />', () => {
     expect(app.state().flipped).toBe(false);
     expect(app.state().card).toEqual(0);
 
-    expect(app.find('.front').hasClass('hidden')).toBe(false);
-    expect(app.find('.back').hasClass('hidden')).toBe(true);
+    expect(app.find('.russian').hasClass('hidden')).toBe(false);
+    expect(app.find('.english').hasClass('hidden')).toBe(true);
 
-    expect(app.find('.front').find('.lead').text()).toEqual('Да');
-    expect(app.find('.front').find('.phonetic').text()).toEqual('[dá]');
+    expect(app.find('.russian').find('.lead').text()).toEqual('Да');
+    expect(app.find('.russian').find('.phonetic').text()).toEqual('[dá]');
 
   })
 
@@ -40,11 +40,11 @@ describe('<App />', () => {
     expect(app.state().card).toEqual(0);
 
 
-    expect(app.find('.front').hasClass('hidden')).toBe(true);
-    expect(app.find('.back').hasClass('hidden')).toBe(false);
+    expect(app.find('.russian').hasClass('hidden')).toBe(true);
+    expect(app.find('.english').hasClass('hidden')).toBe(false);
 
-    expect(app.find('.back').find('.lead').text()).toEqual('Yes');
-    expect(app.find('.back').find('.phonetic').text()).toEqual('[dá]');
+    expect(app.find('.english').find('.lead').text()).toEqual('Yes');
+    expect(app.find('.english').find('.phonetic').text()).toEqual('[dá]');
 
   });
 
@@ -57,11 +57,11 @@ describe('<App />', () => {
     expect(app.state().card).toEqual(1);
 
 
-    expect(app.find('.front').hasClass('hidden')).toBe(false);
-    expect(app.find('.back').hasClass('hidden')).toBe(true);
+    expect(app.find('.russian').hasClass('hidden')).toBe(false);
+    expect(app.find('.english').hasClass('hidden')).toBe(true);
 
-    expect(app.find('.front').find('.lead').text()).toEqual('Нет');
-    expect(app.find('.front').find('.phonetic').text()).toEqual("[n'ét]");
+    expect(app.find('.russian').find('.lead').text()).toEqual('Нет');
+    expect(app.find('.russian').find('.phonetic').text()).toEqual("[n'ét]");
 
   });
 
@@ -76,11 +76,11 @@ describe('<App />', () => {
     expect(app.state().card).toEqual(1);
 
 
-    expect(app.find('.front').hasClass('hidden')).toBe(true);
-    expect(app.find('.back').hasClass('hidden')).toBe(false);
+    expect(app.find('.russian').hasClass('hidden')).toBe(true);
+    expect(app.find('.english').hasClass('hidden')).toBe(false);
 
-    expect(app.find('.back').find('.lead').text()).toEqual('No');
-    expect(app.find('.back').find('.phonetic').text()).toEqual("[n'ét]");
+    expect(app.find('.english').find('.lead').text()).toEqual('No');
+    expect(app.find('.english').find('.phonetic').text()).toEqual("[n'ét]");
 
   });
 });
