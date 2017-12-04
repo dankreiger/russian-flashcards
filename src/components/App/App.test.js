@@ -26,8 +26,7 @@ describe('<App />', () => {
     expect(app.find('.front').hasClass('hidden')).toBe(false);
     expect(app.find('.back').hasClass('hidden')).toBe(true);
 
-    expect(app.find('.front').find('.lead').text()).toEqual('Да');
-    expect(app.find('.front').find('.phonetic').text()).toEqual('[dá]');
+    expect(app.find('.front').find('.lead').text()).toEqual('Yes');
 
   })
 
@@ -43,7 +42,7 @@ describe('<App />', () => {
     expect(app.find('.front').hasClass('hidden')).toBe(true);
     expect(app.find('.back').hasClass('hidden')).toBe(false);
 
-    expect(app.find('.back').find('.lead').text()).toEqual('Yes');
+    expect(app.find('.back').find('.lead').text()).toEqual('Да');
     expect(app.find('.back').find('.phonetic').text()).toEqual('[dá]');
 
   });
@@ -60,8 +59,7 @@ describe('<App />', () => {
     expect(app.find('.front').hasClass('hidden')).toBe(false);
     expect(app.find('.back').hasClass('hidden')).toBe(true);
 
-    expect(app.find('.front').find('.lead').text()).toEqual('Нет');
-    expect(app.find('.front').find('.phonetic').text()).toEqual("[n'ét]");
+    expect(app.find('.front').find('.lead').text()).toEqual('No');
 
   });
 
@@ -79,7 +77,7 @@ describe('<App />', () => {
     expect(app.find('.front').hasClass('hidden')).toBe(true);
     expect(app.find('.back').hasClass('hidden')).toBe(false);
 
-    expect(app.find('.back').find('.lead').text()).toEqual('No');
+    expect(app.find('.back').find('.lead').text()).toEqual('Нет');
     expect(app.find('.back').find('.phonetic').text()).toEqual("[n'ét]");
 
   });

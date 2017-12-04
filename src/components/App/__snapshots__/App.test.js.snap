@@ -5,6 +5,23 @@ exports[`<App /> renders correctly 1`] = `
   <div
     className="App"
   >
+    <div
+      className="starting-language-menu"
+    >
+      <label>
+        Front Side 
+      </label>
+      <select
+        onChange={[Function]}
+      >
+        <option>
+          English
+        </option>
+        <option>
+          Russian
+        </option>
+      </select>
+    </div>
     <Flashcard
       card={0}
       flipCard={[Function]}
@@ -30,12 +47,7 @@ exports[`<App /> renders correctly 1`] = `
             <p
               className="lead"
             >
-              Да
-            </p>
-            <p
-              className="phonetic"
-            >
-              [dá]
+              Yes
             </p>
           </div>
         </Front>
@@ -55,7 +67,7 @@ exports[`<App /> renders correctly 1`] = `
             <p
               className="lead"
             >
-              Yes
+              Да
             </p>
             <p
               className="phonetic"
