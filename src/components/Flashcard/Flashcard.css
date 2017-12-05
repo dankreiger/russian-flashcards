@@ -27,6 +27,10 @@
           flex-direction: column;
 }
 
+.Flashcard:hover {
+  border-radius: 3px;
+}
+
 .Flashcard.newCard {
   transition: 0s;
 }
