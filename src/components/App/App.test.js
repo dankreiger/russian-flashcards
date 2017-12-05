@@ -1,6 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
+import { MemoryRouter } from 'react-router-dom';
+import vocabulary from '../../static/vocabulary';
 
 
 import App from './App';
@@ -8,7 +10,11 @@ import App from './App';
 describe('<App />', () => {
   let app;
   beforeEach(() => {
-    app = mount(<App />);
+    app = mount(
+      <MemoryRouter initialEntries={[ '/', '/basics' ]} >
+        <App vocabulary={vocabulary.basics}/>
+      </MemoryRouter>
+    );
   });
 
   it('renders a <Flashcard /> component', () => {

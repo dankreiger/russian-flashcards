@@ -18,6 +18,7 @@
 .links-container {
   display: flex;
   width: 100%;
+  max-width: 800px;
   justify-content: space-around;
 }
 

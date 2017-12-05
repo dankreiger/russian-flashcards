@@ -1,37 +1,202 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> renders correctly 1`] = `
-<App>
-  <div
-    className="App"
+<MemoryRouter
+  initialEntries={
+    Array [
+      "/",
+      "/basics",
+    ]
+  }
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "q8abiu",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          Object {
+            "hash": "",
+            "key": "5izz6a",
+            "pathname": "/basics",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 2,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "q8abiu",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
   >
-    <div
-      className="starting-language-menu"
-    >
-      <label>
-        Front Side 
-      </label>
-      <select
-        onChange={[Function]}
-      >
-        <option>
-          English
-        </option>
-        <option>
-          Russian
-        </option>
-      </select>
-    </div>
-    <Flashcard
-      card={0}
-      flipCard={[Function]}
-      flipped={false}
+    <App
+      vocabulary={
+        Array [
+          Object {
+            "phonetic": "[dá]",
+            "translation": "Yes",
+            "word": "Да",
+          },
+          Object {
+            "phonetic": "[n'ét]",
+            "translation": "No",
+            "word": "Нет",
+          },
+          Object {
+            "phonetic": "[dóm]",
+            "translation": "House",
+            "word": "Дом",
+          },
+          Object {
+            "phonetic": "ра-бó-та / [rabóta]",
+            "translation": "Job/Work",
+            "word": "Работа",
+          },
+          Object {
+            "phonetic": "квар-т\`и –ра / [kvartíra]",
+            "translation": "Apartment",
+            "word": "Квартира",
+          },
+          Object {
+            "phonetic": "семь-\`я / [sem’\`ya]",
+            "translation": "Family",
+            "word": "Семья",
+          },
+          Object {
+            "phonetic": "óт-пуск / [ótpoosk]",
+            "translation": "Vacation",
+            "word": "Отпуск",
+          },
+          Object {
+            "phonetic": "мó-ре / [móre]",
+            "translation": "Sea",
+            "word": "Море",
+          },
+          Object {
+            "phonetic": "са-мо-л\`ёт / [samal\`yot]",
+            "translation": "Airplane",
+            "word": "Самолёт",
+          },
+          Object {
+            "phonetic": "би-лéт /[bilét]",
+            "translation": "Ticket",
+            "word": "Билет",
+          },
+          Object {
+            "phonetic": "кре-д\`ит-на-я кáр-та / [kredítnaya] [kárta]",
+            "translation": "A credit card",
+            "word": "Кредитная карта",
+          },
+          Object {
+            "phonetic": "дéнь-ги / [dén’gi]",
+            "translation": "Money",
+            "word": "Деньги",
+          },
+          Object {
+            "phonetic": "зар-плá-та / [zarpláta]",
+            "translation": "Salary",
+            "word": "Зарплата",
+          },
+          Object {
+            "phonetic": "ма-га-з\`ин / [magazín]",
+            "translation": "Shop",
+            "word": "Магазин",
+          },
+          Object {
+            "phonetic": "здо-рóвь-е / [zdaróv’e]",
+            "translation": "Health",
+            "word": "Здоровье",
+          },
+          Object {
+            "phonetic": "у-дá-ча / [oodácha]",
+            "translation": "Fortune",
+            "word": "Удача",
+          },
+          Object {
+            "phonetic": "ус-пéх / [oospékh]",
+            "translation": "Success",
+            "word": "Успех",
+          },
+          Object {
+            "phonetic": "при-вéт / [privét]",
+            "translation": "Hi! (informal)",
+            "word": "Привет!",
+          },
+          Object {
+            "phonetic": "по-кá / [paká]",
+            "translation": "Bye/See you! (informal)",
+            "word": "Пока!",
+          },
+          Object {
+            "phonetic": "здрáв-ствуй-те / [zdrástvooyte]",
+            "translation": "Hello! (formal)",
+            "word": "Здравствуйте!",
+          },
+          Object {
+            "phonetic": "до сви-дá-ни-я / [da svidániya]",
+            "translation": "Good-bye! (formal)",
+            "word": "До свидания!",
+          },
+        ]
+      }
     >
       <div
-        className="Flashcard"
-        onClick={[Function]}
+        className="App"
       >
-        <Front
+        <div
+          className="links-container"
+        >
+          <Link
+            replace={false}
+            to="/"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              Back
+            </a>
+          </Link>
+          <div
+            className="starting-language-menu"
+          >
+            <label>
+              Front Side 
+            </label>
+            <select
+              onChange={[Function]}
+            >
+              <option>
+                English
+              </option>
+              <option>
+                Russian
+              </option>
+            </select>
+          </div>
+        </div>
+        <Flashcard
           card={
             Object {
               "phonetic": "[dá]",
@@ -39,19 +204,61 @@ exports[`<App /> renders correctly 1`] = `
               "word": "Да",
             }
           }
+          flipCard={[Function]}
           flipped={false}
         >
           <div
-            className="front"
+            className="Flashcard"
+            onClick={[Function]}
           >
-            <p
-              className="lead"
+            <Component
+              card={
+                Object {
+                  "phonetic": "[dá]",
+                  "translation": "Yes",
+                  "word": "Да",
+                }
+              }
+              flipped={false}
             >
-              Yes
-            </p>
+              <div
+                className="front"
+              >
+                <p
+                  className="lead"
+                >
+                  Yes
+                </p>
+              </div>
+            </Component>
+            <Component
+              card={
+                Object {
+                  "phonetic": "[dá]",
+                  "translation": "Yes",
+                  "word": "Да",
+                }
+              }
+              flipped={false}
+            >
+              <div
+                className="back hidden"
+              >
+                <p
+                  className="lead"
+                >
+                  Да
+                </p>
+                <p
+                  className="phonetic"
+                >
+                  [dá]
+                </p>
+              </div>
+            </Component>
           </div>
-        </Front>
-        <Back
+        </Flashcard>
+        <Component
           card={
             Object {
               "phonetic": "[dá]",
@@ -59,59 +266,41 @@ exports[`<App /> renders correctly 1`] = `
               "word": "Да",
             }
           }
-          flipped={false}
+          flipCard={[Function]}
+          nextCard={[Function]}
+          sayWord={[Function]}
         >
           <div
-            className="back hidden"
+            className="flex-buttons"
           >
-            <p
-              className="lead"
+            <button
+              className="btn blue sayWord"
+              onClick={[Function]}
             >
-              Да
-            </p>
-            <p
-              className="phonetic"
+              <span>
+                Say
+              </span>
+            </button>
+            <button
+              className="btn orange flipCard"
+              onClick={[Function]}
             >
-              [dá]
-            </p>
+              <span>
+                Flip
+              </span>
+            </button>
+            <button
+              className="btn nextCard"
+              onClick={[Function]}
+            >
+              <span>
+                Next
+              </span>
+            </button>
           </div>
-        </Back>
+        </Component>
       </div>
-    </Flashcard>
-    <Buttons
-      flipCard={[Function]}
-      nextCard={[Function]}
-      sayWord={[Function]}
-    >
-      <div
-        className="flex-buttons"
-      >
-        <button
-          className="btn blue sayWord"
-          onClick={[Function]}
-        >
-          <span>
-            Say
-          </span>
-        </button>
-        <button
-          className="btn orange flipCard"
-          onClick={[Function]}
-        >
-          <span>
-            Flip
-          </span>
-        </button>
-        <button
-          className="btn nextCard"
-          onClick={[Function]}
-        >
-          <span>
-            Next
-          </span>
-        </button>
-      </div>
-    </Buttons>
-  </div>
-</App>
+    </App>
+  </Router>
+</MemoryRouter>
 `;

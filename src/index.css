@@ -5,11 +5,14 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background: #e5e9ec;
+
 }
 
 #root {
   padding-left: 2rem;
   padding-right: 2rem;
+  overflow: auto;
+
 }
 
 .index-list {

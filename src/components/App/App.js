@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   nextCard = () => {
-    this.setState({flipped: this.state.currentLang === "Russian", card: this.state.card === this.vocabulary.keys.length - 1 ? 0 : this.state.card + 1});
+    this.setState({flipped: this.state.currentLang === "Russian", card: this.state.card === this.vocabulary.length - 1 ? 0 : this.state.card + 1});
   }
 
   sayWord = () => {
