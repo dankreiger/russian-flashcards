@@ -6,3 +6,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #e5e9ec;
 }
+
+#root {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

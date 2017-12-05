@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import Flashcard from '../Flashcard/Flashcard';
 import Buttons from '../Buttons/Buttons';
 import vocabulary from '../../static/vocabulary';
@@ -6,9 +8,11 @@ import Artyom from 'artyom.js';
 import './App.css';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { flipped: false, card: 0, currentLang: "English" };
+
+    this.vocabulary = this.props.vocabulary;
   }
 
   flipCard = () => {
@@ -16,12 +20,12 @@ class App extends Component {
   }
 
   nextCard = () => {
-    this.setState({flipped: this.state.currentLang === "Russian", card: this.state.card === vocabulary.length - 1 ? 0 : this.state.card + 1});
+    this.setState({flipped: this.state.currentLang === "Russian", card: this.state.card === this.vocabulary.keys.length - 1 ? 0 : this.state.card + 1});
   }
 
   sayWord = () => {
     let artyom = new Artyom();
-    artyom.say(vocabulary[this.state.card].word, {
+    artyom.say(this.vocabulary[this.state.card].word, {
       lang:"ru-RU"
     });
   }
@@ -31,15 +35,18 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="starting-language-menu">
-          <label>Front Side </label>
-          <select onChange={e => this.setState({currentLang: e.target.value, flipped: e.target.value === "Russian"})}>
-            <option>English</option>
-            <option>Russian</option>
-          </select>
+        <div className="links-container">
+          <Link to="/">Back</Link>
+          <div className="starting-language-menu">
+            <label>Front Side </label>
+            <select onChange={e => this.setState({currentLang: e.target.value, flipped: e.target.value === "Russian"})}>
+              <option>English</option>
+              <option>Russian</option>
+            </select>
+          </div>
         </div>
-        <Flashcard card={card} flipCard={this.flipCard} flipped={flipped} />
-        <Buttons sayWord={this.sayWord} flipCard={this.flipCard} nextCard={this.nextCard}/>
+        <Flashcard card={this.vocabulary[card]} flipCard={this.flipCard} flipped={flipped} />
+        <Buttons card={this.vocabulary[card]} sayWord={this.sayWord} flipCard={this.flipCard} nextCard={this.nextCard}/>
       </div>
     );
   }

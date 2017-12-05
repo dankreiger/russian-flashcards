@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-import vocabulary from '../../static/vocabulary';
 import classNames from 'classnames';
 
 import Front from '../Front/Front';
@@ -24,8 +22,8 @@ class Flashcard extends Component {
 
     return (
       <div className={classNames('Flashcard', {newCard, flipped})} onClick={flipCard}>
-        <Front card={vocabulary[card]} flipped={flipped} />
-        <Back card={vocabulary[card]} flipped={flipped} />
+        <Front card={card} flipped={flipped} />
+        <Back card={card} flipped={flipped} />
       </div>
     )
   }
