@@ -13,7 +13,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" render={props => (
         <div>
-          <ul>
+          <ul className="index-list">
             <li>
               <NavLink to="/basics" activeClassName="selected">Basics</NavLink>
             </li>

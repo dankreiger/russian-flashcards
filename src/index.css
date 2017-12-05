@@ -11,3 +11,24 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+.index-list {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  list-style: none;
+}
+
+.index-list li a {
+  text-decoration: none;
+  font-size: 2em;
+  transition: 0.25s all ease;
+  color: #4881ea;
+}
+
+.index-list li a:hover {
+  font-size: 2.3em;
+  color: #5f91ec;
+}
