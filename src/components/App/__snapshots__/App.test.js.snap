@@ -19,14 +19,14 @@ exports[`<App /> renders correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "952chz",
+            "key": "6x65kk",
             "pathname": "/",
             "search": "",
             "state": undefined,
           },
           Object {
             "hash": "",
-            "key": "3px94a",
+            "key": "o8witc",
             "pathname": "/basics",
             "search": "",
             "state": undefined,
@@ -40,7 +40,7 @@ exports[`<App /> renders correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "952chz",
+          "key": "6x65kk",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -168,10 +168,12 @@ exports[`<App /> renders correctly 1`] = `
           className="links-container"
         >
           <Link
+            className="back-link"
             replace={false}
             to="/"
           >
             <a
+              className="back-link"
               href="/"
               onClick={[Function]}
             >
