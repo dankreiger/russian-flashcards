@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import Flashcard from '../Flashcard/Flashcard';
 import Buttons from '../Buttons/Buttons';
-import vocabulary from '../../static/vocabulary';
 import Artyom from 'artyom.js';
 import './App.css';
 

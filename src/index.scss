@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background: #e5e9ec; }
+  background: #e5e9ec;
+}
 
 #root {
   padding-left: 2rem;
   padding-right: 2rem;
-  overflow: auto; }
+  overflow: auto;
+}
 
 .index-list {
   display: flex;
@@ -16,11 +19,14 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  align-items: center; }
-  .index-list a {
+  align-items: center;
+  a {
     text-decoration: none;
     font-size: 2em;
     transition: 0.25s all ease;
-    color: #4881ea; }
-    .index-list a:hover {
-      color: #5f91ec; }
+    color: #4881ea;
+    &:hover {
+      color: #5f91ec;
+    }
+  }
+}

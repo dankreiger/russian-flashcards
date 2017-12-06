@@ -13,11 +13,10 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" render={props => (
         <div>
-          <ul className="index-list">
-            <li>
-              <NavLink to="/basics" activeClassName="selected">Basics</NavLink>
-            </li>
-          </ul>
+          <div className="index-list">
+            <NavLink to="/basics" activeClassName="selected">Basics</NavLink>
+            <NavLink to="/subject_pronouns" activeClassName="selected">Subject Pronouns</NavLink>
+          </div>
         </div>
       )}>
       </Route>
