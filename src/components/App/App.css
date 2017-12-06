@@ -29,3 +29,11 @@ select {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
+
+.back-link {
+  text-decoration: none;
+  font-size: 2em;
+  transition: 0.25s all ease;
+  color: #4881ea; }
+  .back-link:hover {
+    color: #5f91ec; }

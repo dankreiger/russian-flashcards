@@ -21,8 +21,8 @@ ReactDOM.render(
       )}>
       </Route>
       {['basics', 'nominative_pronouns'].map(site =>
-        <Route path="/basics" render={props =>
-          <App {...props} vocabulary={vocabulary['basics']}/>
+        <Route path={`/${site}`} render={props =>
+          <App {...props} vocabulary={vocabulary[site]}/>
         }>
         </Route>
       )}

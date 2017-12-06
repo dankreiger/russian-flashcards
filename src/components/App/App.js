@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="links-container">
-          <Link to="/">Back</Link>
+          <Link className="back-link" to="/">Back</Link>
           <div className="starting-language-menu">
             <label>Front Side </label>
             <select onChange={e => this.setState({currentLang: e.target.value, flipped: e.target.value === "Russian"})}>

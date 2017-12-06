@@ -21,7 +21,17 @@ const vocabulary = {
       {word: "Пока!", phonetic: "по-кá / [paká]", translation: "Bye/See you! (informal)"},
       {word: "Здравствуйте!", phonetic: "здрáв-ствуй-те / [zdrástvooyte]", translation: "Hello! (formal)"},
       {word: "До свидания!", phonetic: "до сви-дá-ни-я / [da svidániya]", translation: "Good-bye! (formal)"}
-    ]
+    ],
+    nominative_pronouns: [
+        {word: "Я", phonetic: "[ya]", translation: "I"},
+        {word: "Ты", phonetic: "[ty]", translation: "You (sing. informal)"},
+        {word: "Вы", phonetic: "[vy]", translation: "You (pl. and formal `you`)"},
+        {word: "Он", phonetic: "[on]", translation: "He, it (m)"},
+        {word: "Она", phonetic: "[a-ná]", translation: "She, it (f)"},
+        {word: "Оно", phonetic: "[a-nó] ", translation: "It (n)"},
+        {word: "Мы", phonetic: "[my]", translation: "We"},
+        {word: "Они", phonetic: "[a-née] ", translation: "They"}
+      ]
   }
 
 

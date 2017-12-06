@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Verdana, sans-serif;
   background: #e5e9ec; }
 
 #root {
@@ -18,9 +18,12 @@ body {
   height: 100vh;
   align-items: center; }
   .index-list a {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     text-decoration: none;
     font-size: 2em;
     transition: 0.25s all ease;
     color: #4881ea; }
     .index-list a:hover {
-      color: #5f91ec; }
+      color: #5f91ec;
+      transform: scale(1.1); }
