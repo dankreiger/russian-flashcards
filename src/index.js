@@ -20,10 +20,12 @@ ReactDOM.render(
         </div>
       )}>
       </Route>
-      <Route path="/basics" render={props => (
-        <App {...props} vocabulary={vocabulary[basics]}/>
-      )}>
-      </Route>
+      {['basics', 'nominative_pronouns'].map(site =>
+        <Route path="/basics" render={props =>
+          <App {...props} vocabulary={vocabulary['basics']}/>
+        }>
+        </Route>
+      )}
     </Switch>
   </Router>,
 document.getElementById('root'));
