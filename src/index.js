@@ -15,13 +15,13 @@ ReactDOM.render(
         <div>
           <div className="index-list">
             <NavLink to="/basics" activeClassName="selected">Basics</NavLink>
-            <NavLink to="/subject_pronouns" activeClassName="selected">Subject Pronouns</NavLink>
+            <NavLink to="/nominative_pronouns" activeClassName="selected">Nominative Pronouns</NavLink>
           </div>
         </div>
       )}>
       </Route>
       <Route path="/basics" render={props => (
-        <App {...props} vocabulary={vocabulary.basics}/>
+        <App {...props} vocabulary={vocabulary[basics]}/>
       )}>
       </Route>
     </Switch>

@@ -19,14 +19,14 @@ exports[`<App /> renders correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "rvi0gu",
+            "key": "dnp4t3",
             "pathname": "/",
             "search": "",
             "state": undefined,
           },
           Object {
             "hash": "",
-            "key": "xhggs9",
+            "key": "2pcw38",
             "pathname": "/basics",
             "search": "",
             "state": undefined,
@@ -40,7 +40,7 @@ exports[`<App /> renders correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "rvi0gu",
+          "key": "dnp4t3",
           "pathname": "/",
           "search": "",
           "state": undefined,
