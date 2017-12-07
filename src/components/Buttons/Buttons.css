@@ -33,6 +33,10 @@
     background-color: #FF9800; }
     .btn.orange:hover, .btn.orange:focus {
       background-color: #FB8C00; }
+  .btn.red {
+    background-color: #FF4136; }
+    .btn.red:hover, .btn.red:focus {
+      background-color: #FF3025; }
   .btn span {
     display: block;
     padding: 12px 24px; }

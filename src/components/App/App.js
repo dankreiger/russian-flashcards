@@ -18,6 +18,10 @@ class App extends Component {
     this.setState({flipped: !this.state.flipped});
   }
 
+  prevCard = () => {
+    this.setState({flipped: this.state.currentLang === "Russian", card: this.state.card === 0 ? this.vocabulary.length - 1 : this.state.card - 1});
+  }
+
   nextCard = () => {
     this.setState({flipped: this.state.currentLang === "Russian", card: this.state.card === this.vocabulary.length - 1 ? 0 : this.state.card + 1});
   }
@@ -45,7 +49,7 @@ class App extends Component {
           </div>
         </div>
         <Flashcard card={this.vocabulary[card]} flipCard={this.flipCard} flipped={flipped} />
-        <Buttons card={this.vocabulary[card]} sayWord={this.sayWord} flipCard={this.flipCard} nextCard={this.nextCard}/>
+        <Buttons card={this.vocabulary[card]} sayWord={this.sayWord} flipCard={this.flipCard} prevCard={this.prevCard} nextCard={this.nextCard}/>
       </div>
     );
   }
