@@ -11,8 +11,8 @@ describe('<App />', () => {
   let app;
   beforeEach(() => {
     app = mount(
-      <MemoryRouter initialEntries={[ '/', '/basics' ]} >
-        <App vocabulary={vocabulary.basics}/>
+      <MemoryRouter initialEntries={[ '/', '/basics_1' ]} >
+        <App vocabulary={vocabulary.basics_1}/>
       </MemoryRouter>
     );
   });
