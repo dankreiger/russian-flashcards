@@ -11,7 +11,7 @@ describe('<App />', () => {
   let app;
   beforeEach(() => {
     app = mount(
-      <MemoryRouter initialEntries={[ '/', '/basics_1' ]} >
+      <MemoryRouter initialEntries={[ '/' ]} >
         <App vocabulary={vocabulary.basics_1}/>
       </MemoryRouter>
     );
@@ -24,9 +24,9 @@ describe('<App />', () => {
   // // learn how to implement these with react router - <MemoryRouter /> causes them to fail
 
 
-  // it('renders correctly', () => {
-  //   expect(toJson(app)).toMatchSnapshot();
-  // });
+  it('renders correctly', () => {
+    expect(toJson(app)).toMatchSnapshot();
+  });
 
 
   // it('renders the first card unflipped with the correct text', () => {
